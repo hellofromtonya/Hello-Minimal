@@ -1,0 +1,16 @@
+//
+// Fullpage Title Areas
+//========================
+
+.fullpage-title {
+    //background-color: $background--accent-color;
+
+    h1, h3, h3, p, & {
+      color: $green;
+      font-weight: 100;
+    }
+
+    body.blog &, body.archive & {
+        margin-bottom: 60px;
+    }
+}

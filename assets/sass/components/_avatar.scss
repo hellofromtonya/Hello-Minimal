@@ -1,0 +1,14 @@
+/* Avatar
+--------------------------------------------- */
+
+.avatar {
+  float: left;
+}
+
+.alignleft .avatar {
+  margin-right: 24px;
+}
+
+.alignright .avatar {
+  margin-left: 24px;
+}

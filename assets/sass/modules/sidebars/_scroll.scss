@@ -1,0 +1,59 @@
+.scroll {
+  &--container {
+    padding: 55px 0 20px;
+    position: absolute;
+    top: 85vh;
+    right: 0;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--line {
+    transform-origin: 0 100%;
+    transform: scaleY(1) translateY(0);
+    margin: 0 0 0 -1px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 50px;
+    background-color: $sidebar--color;
+  }
+
+  &--text {
+    text-transform: lowercase;
+    text-align: center;
+    color: $sidebar--color;
+  }
+
+  &--line, &--text, &--up {
+    transition: transform 0.5s cubic-bezier(0.55,0.055,0.675,0.19);
+  }
+
+
+  &--up {
+    position: absolute;
+    top: -5px;
+    right: 16px;
+    width: 0;
+    height: 0;
+
+    @media screen and (min-width: 1280px) {
+      right: 25px;
+    }
+
+    &.slideInUp {
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+
+      border-bottom: 25px solid $sidebar--color;
+    }
+
+    &:hover {
+      border-bottom: 25px solid $sidebar--hover-color;
+    }
+  }
+}

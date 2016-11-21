@@ -1,0 +1,62 @@
+//
+// Buttons
+//=======================
+
+.button,
+.entry-content a.button,
+.content-hide-message a.button,
+input[type="submit"],
+input[type="button"] {
+  background: $darkBlue;
+  border: 1px solid $darkBlue;
+  border-bottom: 1px solid $darkBlue;
+  color: $white;
+  cursor: pointer;
+  @include rem(font-size, 14px);
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  width: auto;
+
+  &.orange {
+    background: $orange;
+    border: 1px solid $orange;
+    border-bottom: 1px solid $orange;
+    color: $blue;
+  }
+
+  &.green {
+    background: $green;
+    border: 1px solid $green;
+    border-bottom: 1px solid $green;
+    color: $blue;
+  }
+
+  &.gray {
+    background: $gray;
+    border: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    color: $blue;
+  }
+}
+
+.button {
+  display: inline-block;
+}
+
+button:focus,
+input:focus[type="button"],
+input:focus[type="reset"],
+input:focus[type="submit"],
+.button:focus,
+.entry-content a.button:focus,
+button:hover,
+input:hover[type="button"],
+input:hover[type="submit"],
+input:hover[type="reset"],
+.button:hover,
+.entry-content a.button:hover {
+  background-color: $white;
+  border: 1px solid $darkBlue;
+  color: $darkBlue;
+}

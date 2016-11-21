@@ -1,0 +1,20 @@
+blockquote {
+  color: $green;
+  margin: 0 0 30px;
+  padding: 24px 40px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "\201C";
+    display: block;
+    font-family: $serif;
+    font-size: 120px;
+    height: 0;
+    left: -55px;
+    position: relative;
+    top: -55px;
+  }
+}

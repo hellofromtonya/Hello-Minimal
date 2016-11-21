@@ -1,0 +1,54 @@
+.menu--container {
+  width: 0%;
+  height: 0;
+  min-height: 800px;
+  position: fixed;
+  display: block;
+  top: 0;
+  overflow: hidden;
+  opacity: 0;
+  background-color: $white;
+  color: $darkBlue;
+
+  .wrap {
+    max-width: 90%;
+    width: 90%;
+    padding-top: 40px;
+  }
+
+  h2, p, & {
+    text-align: left;
+  }
+
+  h2 {
+    background-color: $background--accent-color;
+    padding: 10px;
+    color: $darkBlue;
+  }
+
+  p {
+    margin-left: 20px;
+  }
+}
+
+body.menu--open .menu--container {
+  opacity: 1;
+  width: 100%;
+  min-height: 500px;
+  height: 100%;
+  overflow: auto;
+  right: 0;
+  z-index: 99;
+
+  @media screen and (min-width: $full-layout--screen) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: $full-layout--screen) {
+    right: 100px;
+  }
+
+  .menu--item--home {
+    margin-bottom: 30px;
+  }
+}

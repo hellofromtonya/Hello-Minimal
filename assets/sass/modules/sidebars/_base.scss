@@ -1,0 +1,30 @@
+.sidebar--right, .sidebar--left {
+  display: none;
+
+  @media screen and (min-width: $full-layout--screen) {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+  }
+}
+
+.sidebar--left {
+  top: 80px;
+  left: 0;
+}
+
+.sidebar--right {
+  right: 0;
+  background-color: $background--accent-color;
+  width: 80px;
+
+  @media screen and (min-width: 1280px) {
+    width: 100px;
+  }
+
+  .sidebar--wrapper {
+    position: relative;
+  }
+}

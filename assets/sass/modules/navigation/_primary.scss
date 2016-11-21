@@ -1,0 +1,33 @@
+//
+// Header Right navigation
+//=================================
+
+.nav-primary {
+	list-style-type: none;
+	text-align: left;
+	color: $white;
+	width: 80%;
+
+	a:hover,
+	a:focus,
+	a:active,
+	.current-menu-item > a {
+		color: $black;
+		border: 0;
+	}
+
+	.genesis-nav-menu {
+		.menu-item {
+			display: block;
+		}
+
+		li {
+			font-size: 24px;
+
+			@include media(1200px) {
+				font-size: 40px;
+			}
+		}
+
+	}
+}

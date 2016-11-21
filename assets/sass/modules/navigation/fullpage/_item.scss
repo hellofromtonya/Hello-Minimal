@@ -1,0 +1,49 @@
+.menu--container .menu {
+  li {
+    margin-bottom: 15px;
+
+    @include media(1025) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.menu--item, .menu--container-social {
+  font-size: 22px;
+  padding: 0 0 14px;
+  position: relative;
+  border-bottom: none;
+
+  @media screen and (min-width: 767px) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: 1025px) {
+    font-size: 36px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 46px;
+    padding-bottom: 24px;
+  }
+
+  span {
+    display: block;
+    font-size: 14px;
+    color: lighten($darkBlue, 30%);
+
+    @media screen and (min-width: 1025px) {
+      font-size: 18px;
+    }
+  }
+
+  a, & {
+    color: $darkBlue;
+    border-bottom: none;
+
+    &:hover, &:focus {
+      color: $orange;
+    }
+  }
+}

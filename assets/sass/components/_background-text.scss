@@ -1,0 +1,33 @@
+.background--text, .background--text-top {
+  font-size: 0;
+  text-transform: lowercase;
+}
+
+@media screen and (min-width: $full-layout--screen) {
+  .background--text-top, .background--text {
+    font-size: calc(30px + (50 - 30) * ((100vw - 768px) / (1200 - 768)));
+  }
+  .background--text, .background--text-top {
+    font-family: $playfair;
+    z-index: 0;
+
+    color: $background--accent-color;
+    text-align: left;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .background--text {
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    left: 0;
+    top: 93%;
+  }
+
+  .background--text-top {
+    position: absolute;
+    top: 50px;
+    right: 120px;
+  }
+}

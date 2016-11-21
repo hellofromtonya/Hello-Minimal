@@ -1,0 +1,64 @@
+.nav--connect {
+  position: absolute;
+  top: 30vh;
+  right: 25px;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    right: 40px;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    padding: 5px;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    @include rem(font-size, 16px);
+    font-family: $playfair;
+    font-weight: 100;
+    color: $sidebar--color;
+    text-transform: lowercase;
+    text-align: left;
+    position: relative;
+    text-decoration: none;
+    border-bottom: none;
+
+    @media screen and (min-width: 1280px) {
+      @include rem(font-size, 18px);
+    }
+
+    &:hover {
+      color: $sidebar--hover-color;
+      bottom-border: none;
+
+      &::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: $sidebar--hover-color;
+      visibility: hidden;
+      transform: scaleX(0);
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+
+  .cv--link {
+    border: 1px solid $sidebar--color;
+  }
+}

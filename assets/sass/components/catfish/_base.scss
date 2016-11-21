@@ -1,0 +1,34 @@
+//
+// Catfish base
+//===================
+
+.catfish {
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  z-index: 500;
+  transition: visibility 0s linear .3s;
+
+  @media screen and (min-width: $full-layout--screen) {
+    right: 100px;
+  }
+
+  &.is-visible {
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  .wrap {
+    position: relative;
+    height: 0;
+    transform: translateZ(0);
+    width: 100%;
+    padding: 0;
+
+    @include media(320px) {
+      width: 200px;
+    }
+  }
+}

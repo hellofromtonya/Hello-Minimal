@@ -1,0 +1,107 @@
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+
+/* Typographical Elements
+--------------------------------------------- */
+
+html {
+	font-size: 62.5%;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	background-color: $white;
+	color: $darkBlue;
+	font-family: $sans-serif;
+	@include rem(font-size, $base-font-size );
+	@media screen and (min-width: 767px) {
+		@include rem(font-size, 20px );
+	}
+	font-weight: 400;
+	line-height: $base-line-height;
+	text-align: left;
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.gallery img {
+	@include transition( all 0.1s ease-in-out );
+}
+
+::-moz-selection {
+	background: $black;
+	color: $white;
+}
+
+::selection {
+	background: $black;
+	color: $white;
+}
+
+a {
+	color: $orange;
+	border-bottom: 1px dotted;
+	font-weight: 700;
+	text-decoration: none;
+	word-wrap: break-word;
+	img {
+		margin-bottom: -4px;
+	}
+
+	&:hover, &:focus {
+		color: $black;
+	}
+}
+
+p {
+	margin: 0 0 24px;
+	padding: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+pre {
+	background: lighten($black, 11);
+	color: lighten($black, 79);
+	overflow: scroll;
+	padding: 0 20px;
+	white-space: pre;
+}
+
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	width: auto; /* IE8 */
+}
+
+
+

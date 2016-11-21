@@ -1,0 +1,83 @@
+//
+// Title Area
+// - Site Title
+// - Site Description
+//======================================
+
+.title-area {
+  position: relative;
+  margin-top: 10px;
+  @media screen and (min-width: $full-layout--screen) {
+    margin-left: 20px;
+  }
+
+  .admin-bar & {
+    margin-top: (10 + 32) + px;
+  }
+}
+
+.title-area, .site-title a {
+  width: (130 * .7) + px;
+  height: (79 * .7) + px;
+
+  @media screen and (min-width: $full-layout--screen) {
+    width: 130px;
+    height: 79px;
+  }
+}
+
+.site-title, .site-description {
+  margin-bottom: 0;
+}
+
+.site-title {
+  font-weight: 700;
+  text-align: left;
+
+  a,
+  a:hover, a:focus {
+    border: none;
+    border-bottom: none;
+  }
+
+  // My Mug
+  &--avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: -10px;
+    right: -10px;
+
+    @media screen and (min-width: 1280px) {
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+// Hello Logo SVG
+.site--hello-logo {
+  z-index: 12;
+  border-bottom: none;
+  width: (100 * .7) + px;
+  height: (51.35 * .7) + px;
+
+  @media screen and (min-width: $full-layout--screen) {
+    width: 100px;
+    height: 51.35px;
+  }
+
+  .hello-path {
+    fill: $orange;
+    stroke: $orange;
+    stroke-dasharray: 140, 140;
+  }
+}
+
+// Let's hide this.
+.site-description {
+  text-indent: -9999;
+  font-size: 0;
+}

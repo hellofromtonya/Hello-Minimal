@@ -1,0 +1,13 @@
+//
+// Comments Panel
+//=====================
+
+.catfish__comments {
+  //margin: 0 20px;
+  border-left: 1px solid #ccc;
+  padding: 0 0 0 20px;
+
+  a:last-child {
+    margin-left: 10px;
+  }
+}

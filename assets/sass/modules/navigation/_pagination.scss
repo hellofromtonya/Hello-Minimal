@@ -1,0 +1,77 @@
+/* Pagination
+--------------------------------------------- */
+
+.pagination,
+.posts-navigation {
+  margin-bottom: 40px;
+}
+
+.pagination {
+
+  @include clearfix;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    font-size: 14px;
+    background: $green;
+    border: 1px solid $green;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 4px 8px;
+    font-weight: 400;
+
+    @media screen and (min-width: 800px) {
+      font-size: 16px;
+    }
+  }
+
+  .active a, a:hover {
+    background: $white;
+    color: $green;
+    cursor: none;
+  }
+}
+
+.entry-pagination {
+  margin: 30px 0;
+}
+
+.pagination__entry {
+  overflow: hidden;
+  margin: 30px 0;
+
+  .pagination__post-title {
+    font-size: 16px;
+  }
+
+  .button {
+    padding: 8px 24px;
+  }
+
+  .pagination__previous {
+    margin-bottom: 20px;
+  }
+
+  @include media($small-screen-up) {
+    .pagination__previous, .pagination__next {
+      margin-bottom: 0;
+      width: 40%
+    }
+    .pagination__previous {
+      float: left;
+    }
+
+    .pagination__next {
+      float: right;
+      text-align: right;
+    }
+  }
+}

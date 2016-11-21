@@ -1,0 +1,45 @@
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+
+.wrap {
+	margin: 0 auto;
+	padding: 0 5%;
+	max-width: 90%;
+	word-wrap: break-word;
+
+	@media screen and (min-width: $full-layout--screen) {
+		max-width: 80%;
+	}
+
+	@include media($medium-screen-up) {
+		max-width: $wrap-max-width-medium;
+	}
+
+	@include media($huge-screen-up) {
+		max-width: $wrap-max-width-large;
+		padding: 0;
+	}
+}
+
+.site-inner {
+	padding-top: 30px;
+
+	body.single &,
+	body.archive & {
+		padding-top: 120px;
+	}
+}
+
+.content-sidebar-wrap {
+	margin: 0 auto;
+	max-width: 100%;
+
+	body.blog & {
+		margin-top: 60px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 900px;
+	}
+}

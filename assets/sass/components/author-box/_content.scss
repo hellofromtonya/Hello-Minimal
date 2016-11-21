@@ -1,0 +1,11 @@
+.author-box-content, .author-box-title {
+  margin-left: 90px;
+}
+
+.author-box-content {
+  @include rem(font-size, 14px);
+
+  @media screen and (min-width: 1280px) {
+    @include rem(font-size, 16px);
+  }
+}

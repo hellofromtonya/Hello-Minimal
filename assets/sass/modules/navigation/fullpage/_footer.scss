@@ -1,0 +1,12 @@
+.menu--container-social {
+  margin: 20px 0;
+  text-align: left;
+
+  border-top: 1px solid $background--accent-color;
+  padding-top: 10px;
+
+  li {
+    text-transform: lowercase;
+    margin-left: 20px;
+  }
+}

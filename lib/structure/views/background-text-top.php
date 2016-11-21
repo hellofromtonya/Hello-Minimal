@@ -1,0 +1,1 @@
+<div class="background--text-top"><?php esc_html_e( $category_name ); ?></div>
